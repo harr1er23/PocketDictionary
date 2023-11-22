@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/itc-slider.css"> 
+
+    <!-- JavaScript -->
+    <script src="js/itc-slider.js" defer></script>
+
     <title>Pocket Dictionary</title>
   </head>
   <body>
@@ -181,7 +186,7 @@
 
       <section class="tasks">
         <div class="container">
-          <div class="presentation-text">
+            <div class="presentation-text">
             <h2>Наши цели — ваш успех в изучении английского языка</h3>
             <p>Познакомьтесь с нашими ключевыми направлениями работы, созданными для того, чтобы сделать ваш языковой опыт с Pocket Dictionary максимально эффективным и увлекательным.</p>
             <div class="tasks-block">
@@ -214,10 +219,47 @@
                   <div class="task-block-text">Еще одна наша цель заключается в поощрении постоянного обучения. Мы стремимся создать среду, в которой пользователи не только учат новые слова, но и постоянно поддерживают и углубляют свои знания, поощряя привычку к ежедневному обучению.</div>
               </div>
             </div>
-          </div>
+            </div>
+            <div class="presentation-video">
+                <h2>Предлагаем ознакомиться с контентом!</h2>
+                <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo1.jpg" alt="Photo"/>
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo2.jpg" alt="Photo"/>
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo3.jpg" alt="Photo"/>
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo4.jpg" alt="Photo"/>
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo5.jpg" alt="Photo"/>
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="./assets/photo/photo6.jpg" alt="Photo"/>
+                            </div>
+                        </div>
+              
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        <ol class="itc-slider-indicators">
+                            <li class="itc-slider-indicator" data-slide-to="0"></li>
+                            <li class="itc-slider-indicator" data-slide-to="1"></li>
+                            <li class="itc-slider-indicator" data-slide-to="2"></li>
+                            <li class="itc-slider-indicator" data-slide-to="3"></li>
+                            <li class="itc-slider-indicator" data-slide-to="4"></li>
+                            <li class="itc-slider-indicator" data-slide-to="5"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
       </section>
     </div>
-            <!-- JAVASCRIPT FILES -->
             <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
             <script>
                 emailjs.init("ZOMP4lNvaMC-RrZls");
