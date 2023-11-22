@@ -129,6 +129,76 @@ body {
   background-color: white;
 }
 
+/*----TasksSection----*/
+
+section {
+  padding: 0 100px;
+}
+
+.goals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.goal-block {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px 20px 20px 20px;
+  transition: 0.2s linear;
+}
+
+.goal-block:hover {
+  transform: translateY(-15px);
+}
+
+.goal-block:hover .goals-ico {
+  background-color: #05d561;
+}
+
+.goal-block:hover .goals-ico svg path {
+  stroke: white;
+}
+
+.goals-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 22px;
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  font-size: 32px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 0 transparent;
+  background-color: rgba(5, 213, 97, 0.15);
+  color: #222;
+  transition: all 0.25s;
+}
+
+.goals-ico svg {
+  width: 30px;
+  height: 30px;
+}
+
+.goal-block h5 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.goal-block:hover h5 {
+  color: #05d561;
+}
+
+.goals-description {
+  font-size: 16px;
+  width: 100%;
+  color: grey;
+}
+
 /*----GoalsSection----*/
 .tasks {
     background-color: #f7f7f7;
