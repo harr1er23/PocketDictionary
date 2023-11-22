@@ -5,6 +5,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a{
+  all: unset;
+}
 
 /*----Banner----*/
 
@@ -308,3 +311,43 @@ section {
     width: 15px;
     height: 15px;
  }
+
+ .calculator{
+  padding: 50px 480px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+ }
+
+ .calculator b{
+  display: flex;
+ }
+
+ .personal-option{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .personal-option div{
+  display: flex;
+  margin: 15px 0;
+ }
+ 
+ .main {
+  width: 60%;
+  position: relative;
+}
+
+#slider {
+  -webkit-appearance: none; 
+  width: 100%;
+  height: 7px;
+  border-radius: 3px;
+}
+
+#slider::-webkit-slider-thumb {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}

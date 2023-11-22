@@ -10,6 +10,8 @@
 
   <!-- JavaScript -->
   <script src="js/itc-slider.js" defer></script>
+  <script src="js/rangeSwitcher.js" defer></script>
+  <script src="js/calculator.js" defer></script>
 
   <title>Pocket Dictionary</title>
 </head>
@@ -634,6 +636,40 @@
           </ul>
         </div>
       </div>
+              <h2>или создайте его сами</h2>
+        <div class="calculator">
+          <b>Хранилище слов: <div id="selectValue"></div></b><br/>
+          <div class="main">
+            <input  onchange="calc()" type="range" min="5000" max="50000" step="5000" value="5000" id="slider">
+            <div id="selector">
+              <div class="selectBtn"></div>
+            </div>
+            <div id="progressBar"></div>
+          </div><br/>
+          <b>Тип статистики:</b><br/>
+          <select onchange="calc()" id="statisticT-type">
+            <option value="0">Выбрать</option>
+            <option value="5">Статистика уровня Starter</option>
+            <option value="15">Статистика уровня Professional</option>
+            <option value="30">Статистика уровня Enterprise</option>
+          </select><br/>
+          <div class="personal-option">
+            <div>
+                <input type="checkbox" onchange="calc()" value="10" id="unlimited-access" />
+                <label for="unlimited-access">Неограниченный доступ к урокам</label><br/>
+            </div>
+            <div>
+                <input type="checkbox" onchange="calc()" value="25" id="personal-coach" />
+                <label for="personal-coach">Персональный репетитор</label><br/>
+            </div>
+            <div>
+                <input type="checkbox" onchange="calc()" value="15" id="exclusive-lessons" />
+                <label for="exclusive-lessons">Доступ к эксклюзивным урокам</label>
+            </div>
+          </div>
+          <div>Стоимость подписки: <span id="result">0</span> $</div>
+          <div class="feedback-button">Оформить подписку</div>
+        </div>
     </section>
   </div>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
