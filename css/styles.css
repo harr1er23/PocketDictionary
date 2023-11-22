@@ -1,0 +1,130 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*----Banner----*/
+
+.full-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.banner-background {
+  padding: 150px 0 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/background/img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 100px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.banner-content h2 {
+  font-size: 50px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  color: grey;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  padding: 20px 70px 20px 70px;
+  width: 300px;
+  margin-left: auto;
+  z-index: 1;
+  color: black;
+}
+
+
+.feedback-form h3{
+  text-align: center;
+}
+
+.megaphone-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  font-size: 32px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 0 transparent;
+  background-color: rgba(5, 213, 97, 0.15);
+}
+
+.megaphone-ico svg {
+  width: 30px;
+  height: 30px;
+}
+
+.feedback-form p {
+  color: grey;
+  text-align: center;
+}
+
+.feedback-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.feedback-input {
+  display: flex;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 8px 10px;
+}
+
+.feedback-input img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.feedback-input input {
+  all: unset;
+}
+
+.feedback-button {
+  padding: 10px 50px;
+  border: 1px solid #05d561;
+  background-color: #05d561;
+  border-radius: 10px;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.feedback-button:hover {
+  color: #05d561;
+  background-color: white;
+}
