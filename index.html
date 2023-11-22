@@ -21,7 +21,7 @@
               ваш путь к языковому совершенству начинается здесь!
             </p>
           </div>
-          <div class="feedback-form">
+          <form id="feedback-form" class="feedback-form">
             <div class="megaphone-ico">
               <svg
                 version="1.0"
@@ -163,21 +163,55 @@
             <div class="feedback-inputs">
               <div class="feedback-input">
                 <img src="/assets/ico/user.png" alt="Ico" />
-                <input placeholder="Ваше имя" type="text" />
+                <input placeholder="Ваше имя" id="name" type="text" />
               </div>
               <div class="feedback-input">
                 <img src="/assets/ico/phone.png" alt="Ico" />
-                <input placeholder="Ваша почта" type="email" />
+                <input placeholder="Ваша почта" id="email" type="email" />
               </div>
               <div class="feedback-input">
                 <img src="/assets/ico/email.png" alt="Ico" />
-                <input placeholder="Ваш номер телефона" type="text" />
+                <input placeholder="Ваш номер телефона" id="phone" type="text" />
               </div>
-              <button class="feedback-button">Отправить</button>
+              <button onclick="sendEmail()" type="button"  class="feedback-button">Отправить</button>
             </div>
-          </div>
+        </form>
         </div>
       </div>
     </div>
+            <!-- JAVASCRIPT FILES -->
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
+                emailjs.init("ZOMP4lNvaMC-RrZls");
+            
+                function sendEmail() {
+                    var userName = document.getElementById("name").value;
+                    var userEmail = document.getElementById("email").value;
+                    var userPhone = document.getElementById("phone").value;
+            
+                    var messageWithUserEmailAndTariff = "Пользователь " + userName + " оставил почту: " + userEmail +
+                        "\n и телефон:" + userPhone;
+            
+                    emailjs.send("service_ztfuq9o", "template_m89wlgi", {
+                        "from_name": userName,
+                        "from_email": userEmail,
+                        "message": messageWithUserEmailAndTariff
+                    }).then(
+                        function (response) {
+                            console.log("Успешно отправлено", response);
+                            clearForm();
+                        },
+                        function (error) {
+                            console.log("Ошибка отправки", error);
+                        }
+                    );
+            }
+    
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+        }
+        </script>
   </body>
 </html>
