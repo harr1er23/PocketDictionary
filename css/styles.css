@@ -128,3 +128,41 @@ body {
   color: #05d561;
   background-color: white;
 }
+
+/*----GoalsSection----*/
+.tasks {
+    background-color: #f7f7f7;
+  }
+  
+  .presentation-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tasks-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .task-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    margin: 0 20px;
+  }
+  
+  .task-block-title {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .task-block-title svg {
+    width: 30px;
+  }
+  
+  .task-block-text {
+    color: grey;
+    margin-left: auto;
+  }
