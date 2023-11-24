@@ -407,3 +407,132 @@ section {
   position: relative;
   z-index: 3;
 }
+
+/*----Adaptive----*/
+
+@media (max-width: 1100px) {
+  .feedback-form {
+    padding: 20px 30px 20px 30px;
+    margin-left: 0;
+  }
+
+  .banner-content h2 {
+    font-size: 30px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+    color: grey;
+  }
+
+  .about-project p {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 0 20px;
+  }
+
+  .plan-title svg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .calculator{
+    padding: 50px 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin: 0 25px;
+  }
+
+  .banner-content {
+    width: 90%;
+    margin-right: 0px;
+  }
+
+  .goal-block h5 {
+    font-size: 16px;
+  }
+
+  .goals-description {
+    font-size: 12px;
+  }
+
+  .task-block-title h3 {
+    font-size: 16px;
+  }
+
+  .task-block-text {
+    font-size: 12px;
+  }
+
+  .presentation-text h2 {
+    font-size: 20px;
+  }
+
+  .presentation-text p {
+    font-size: 14px;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 30px 20px;
+  }
+
+  .footer .social{
+    margin-top: 20px;
+  }
+
+  .plan-background{
+    width: 250px;
+    margin: 10px 5px 10px 5px;
+    padding: 30px 15px;
+  }
+
+  .plan-title svg{
+    width: 40px;
+    height: 40px;
+  }
+
+  .plan-options{
+    padding: 0 0 10px 0;
+   }
+
+  .plan-options li div{
+    font-size: 10px;
+   }
+
+   .calculator{
+    padding: 50px 150px;
+  }
+}
+
+@media (max-width: 520px){
+  .calculator{
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner {
+    margin: 0 10px;
+  }
+
+  .feedback-form {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .plan-title svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  .calculator{
+    padding: 30px 10px;
+  }
+}
