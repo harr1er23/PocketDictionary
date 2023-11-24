@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a{
+a {
   all: unset;
 }
 
@@ -36,6 +36,15 @@ a{
   margin: 0 100px;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+}
+
+.logo img {
+  width: 20%;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -64,8 +73,7 @@ a{
   color: black;
 }
 
-
-.feedback-form h3{
+.feedback-form h3 {
   text-align: center;
 }
 
@@ -220,85 +228,85 @@ section {
 
 /*----GoalsSection----*/
 .tasks {
-    background-color: #f7f7f7;
-  }
-  
-  .presentation-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .tasks-block {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .task-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 500px;
-    margin: 0 20px;
-  }
-  
-  .task-block-title {
-    display: flex;
-    margin-left: 20px;
-  }
-  
-  .task-block-title svg {
-    width: 30px;
-  }
-  
-  .task-block-text {
-    color: grey;
-    margin-left: auto;
-  }
+  background-color: #f7f7f7;
+}
 
-  /*----FooterSection----*/
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+}
 
-  .footer{
-    display: flex;
-    align-items: center;
-    padding: 50px 100px;
-    justify-content: space-between;
-  }
-  
-  .social{
-    display: flex;
-  }
-  
-  .social-ico{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: all 0.25s;
-    background-color: #eeeeee;
-    cursor: pointer;
-  }
-  
-  .social-ico:hover{
-    background-color: #05d561;
-  }
-  
-  .social-ico:hover svg{
-    fill: white;
-  }
-  
-  .social-ico svg{
-    width: 20px;
-    height: 20px;
-  }
+.tasks-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  /*----CalculatorSection----*/
+.task-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  margin: 0 20px;
+}
 
-.subscription-calculator{
+.task-block-title {
+  display: flex;
+  margin-left: 20px;
+}
+
+.task-block-title svg {
+  width: 30px;
+}
+
+.task-block-text {
+  color: grey;
+  margin-left: auto;
+}
+
+/*----FooterSection----*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 50px 100px;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+}
+
+.social-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 0 transparent;
+  transition: all 0.25s;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.social-ico:hover {
+  background-color: #05d561;
+}
+
+.social-ico:hover svg {
+  fill: white;
+}
+
+.social-ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+/*----CalculatorSection----*/
+
+.subscription-calculator {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,13 +314,13 @@ section {
   text-align: center;
 }
 
-.subscription-plans{
+.subscription-plans {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.plan-background{
+.plan-background {
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -329,72 +337,72 @@ section {
   transform: translateY(-15px);
 }
 
-.plan-background:hover h2{
+.plan-background:hover h2 {
   color: #05d561;
 }
 
-.plan-title{
+.plan-title {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-.plan-title svg{
+.plan-title svg {
   width: 60px;
   height: 60px;
 }
 
 .plan-title p {
   font-size: 16px;
-  color:#aeb8c5;
+  color: #aeb8c5;
 }
 
-.plan-options{
- list-style: none;
+.plan-options {
+  list-style: none;
 }
 
-.plan-options li{
+.plan-options li {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
- }
+}
 
- .plan-options li strong{
+.plan-options li strong {
   font-size: 14px;
- }
+}
 
- .plan-options li svg{
-    width: 15px;
-    height: 15px;
- }
+.plan-options li svg {
+  width: 15px;
+  height: 15px;
+}
 
- .calculator{
+.calculator {
   padding: 50px 480px;
   background-color: #f7f7f7;
   border-radius: 10px;
- }
+}
 
- .calculator b{
+.calculator b {
   display: flex;
- }
+}
 
- .personal-option{
-    display: flex;
-    flex-direction: column;
- }
- 
- .personal-option div{
+.personal-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-option div {
   display: flex;
   margin: 15px 0;
- }
- 
- .main {
+}
+
+.main {
   width: 60%;
   position: relative;
 }
 
 #slider {
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   width: 100%;
   height: 7px;
   border-radius: 3px;
@@ -411,6 +419,10 @@ section {
 /*----Adaptive----*/
 
 @media (max-width: 1100px) {
+  .logo img {
+    width: 30%;
+  }
+
   .feedback-form {
     padding: 20px 30px 20px 30px;
     margin-left: 0;
@@ -433,12 +445,12 @@ section {
     padding: 0 20px;
   }
 
-  .plan-title svg{
+  .plan-title svg {
     width: 50px;
     height: 50px;
   }
 
-  .calculator{
+  .calculator {
     padding: 50px 300px;
   }
 }
@@ -446,6 +458,10 @@ section {
 @media (max-width: 768px) {
   .banner {
     margin: 0 25px;
+  }
+
+  .logo img {
+    width: 40%;
   }
 
   .banner-content {
@@ -477,43 +493,47 @@ section {
     font-size: 14px;
   }
 
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     padding: 30px 20px;
   }
 
-  .footer .social{
+  .footer .social {
     margin-top: 20px;
   }
 
-  .plan-background{
+  .plan-background {
     width: 250px;
     margin: 10px 5px 10px 5px;
     padding: 30px 15px;
   }
 
-  .plan-title svg{
+  .plan-title svg {
     width: 40px;
     height: 40px;
   }
 
-  .plan-options{
+  .plan-options {
     padding: 0 0 10px 0;
-   }
+  }
 
-  .plan-options li div{
+  .plan-options li div {
     font-size: 10px;
-   }
+  }
 
-   .calculator{
+  .calculator {
     padding: 50px 150px;
   }
 }
 
-@media (max-width: 520px){
-  .calculator{
+@media (max-width: 520px) {
+  .logo img {
+    width: 60%;
+  }
+
+  .calculator {
     padding: 30px 50px;
   }
 }
@@ -523,16 +543,20 @@ section {
     margin: 0 10px;
   }
 
+  .logo img {
+    width: 70%;
+  }
+
   .feedback-form {
     padding: 20px 20px 20px 20px;
   }
 
-  .plan-title svg{
+  .plan-title svg {
     width: 30px;
     height: 30px;
   }
 
-  .calculator{
+  .calculator {
     padding: 30px 10px;
   }
 }
