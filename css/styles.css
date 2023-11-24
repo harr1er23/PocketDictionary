@@ -132,11 +132,27 @@ a{
   background-color: white;
 }
 
-/*----TasksSection----*/
-
 section {
   padding: 0 100px;
 }
+
+/*----AboutProjectSection----*/
+
+.about-project {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.about-project p {
+  font-size: 26px;
+  font-weight: 400px;
+}
+
+.about-project strong {
+  font-size: 22px;
+}
+
+/*----TasksSection----*/
 
 .goals {
   display: flex;
