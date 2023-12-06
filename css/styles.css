@@ -2,7 +2,8 @@ html,
 body {
   width: 100%;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto Slab', serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 a {
@@ -304,6 +305,47 @@ section {
   height: 20px;
 }
 
+/*TeamSection*/
+
+.team{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.team h2{
+  text-align: center;
+}
+
+.team-blocks{
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.team-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.team-block p{
+  text-align: center;
+  width: 150px;
+  color: grey;
+}
+
+.team-photo{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+}
+
 /*----CalculatorSection----*/
 
 .subscription-calculator {
@@ -525,6 +567,10 @@ section {
 
   .calculator {
     padding: 50px 150px;
+  }
+
+  .team-blocks{
+    justify-content: center;
   }
 }
 
